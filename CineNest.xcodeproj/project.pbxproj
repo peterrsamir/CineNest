@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		D0058BB12DF0D9DE005E40E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0058B922DF0D9DC005E40E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0058B992DF0D9DC005E40E9;
+			remoteInfo = CineNest;
+		};
+		D0058BBB2DF0D9DE005E40E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0058B922DF0D9DC005E40E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0058B992DF0D9DC005E40E9;
+			remoteInfo = CineNest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D0058B9A2DF0D9DC005E40E9 /* CineNest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CineNest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0058BB02DF0D9DE005E40E9 /* CineNestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CineNestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0058BBA2DF0D9DE005E40E9 /* CineNestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CineNestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D0058BC22DF0D9DE005E40E9 /* Exceptions for "CineNest" folder in "CineNest" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D0058B992DF0D9DC005E40E9 /* CineNest */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		D0058B9C2DF0D9DC005E40E9 /* CineNest */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D0058BC22DF0D9DE005E40E9 /* Exceptions for "CineNest" folder in "CineNest" target */,
+			);
+			path = CineNest;
+			sourceTree = "<group>";
+		};
+		D0058BB32DF0D9DE005E40E9 /* CineNestTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CineNestTests;
+			sourceTree = "<group>";
+		};
+		D0058BBD2DF0D9DE005E40E9 /* CineNestUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CineNestUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0058B972DF0D9DC005E40E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0058BAD2DF0D9DE005E40E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0058BB72DF0D9DE005E40E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D0058B912DF0D9DC005E40E9 = {
+			isa = PBXGroup;
+			children = (
+				D0058B9C2DF0D9DC005E40E9 /* CineNest */,
+				D0058BB32DF0D9DE005E40E9 /* CineNestTests */,
+				D0058BBD2DF0D9DE005E40E9 /* CineNestUITests */,
+				D0058B9B2DF0D9DC005E40E9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0058B9B2DF0D9DC005E40E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0058B9A2DF0D9DC005E40E9 /* CineNest.app */,
+				D0058BB02DF0D9DE005E40E9 /* CineNestTests.xctest */,
+				D0058BBA2DF0D9DE005E40E9 /* CineNestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0058B992DF0D9DC005E40E9 /* CineNest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0058BC32DF0D9DE005E40E9 /* Build configuration list for PBXNativeTarget "CineNest" */;
+			buildPhases = (
+				D0058B962DF0D9DC005E40E9 /* Sources */,
+				D0058B972DF0D9DC005E40E9 /* Frameworks */,
+				D0058B982DF0D9DC005E40E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D0058B9C2DF0D9DC005E40E9 /* CineNest */,
+			);
+			name = CineNest;
+			packageProductDependencies = (
+			);
+			productName = CineNest;
+			productReference = D0058B9A2DF0D9DC005E40E9 /* CineNest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D0058BAF2DF0D9DE005E40E9 /* CineNestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0058BC82DF0D9DE005E40E9 /* Build configuration list for PBXNativeTarget "CineNestTests" */;
+			buildPhases = (
+				D0058BAC2DF0D9DE005E40E9 /* Sources */,
+				D0058BAD2DF0D9DE005E40E9 /* Frameworks */,
+				D0058BAE2DF0D9DE005E40E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0058BB22DF0D9DE005E40E9 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D0058BB32DF0D9DE005E40E9 /* CineNestTests */,
+			);
+			name = CineNestTests;
+			packageProductDependencies = (
+			);
+			productName = CineNestTests;
+			productReference = D0058BB02DF0D9DE005E40E9 /* CineNestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D0058BB92DF0D9DE005E40E9 /* CineNestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0058BCB2DF0D9DE005E40E9 /* Build configuration list for PBXNativeTarget "CineNestUITests" */;
+			buildPhases = (
+				D0058BB62DF0D9DE005E40E9 /* Sources */,
+				D0058BB72DF0D9DE005E40E9 /* Frameworks */,
+				D0058BB82DF0D9DE005E40E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0058BBC2DF0D9DE005E40E9 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D0058BBD2DF0D9DE005E40E9 /* CineNestUITests */,
+			);
+			name = CineNestUITests;
+			packageProductDependencies = (
+			);
+			productName = CineNestUITests;
+			productReference = D0058BBA2DF0D9DE005E40E9 /* CineNestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0058B922DF0D9DC005E40E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					D0058B992DF0D9DC005E40E9 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					D0058BAF2DF0D9DE005E40E9 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = D0058B992DF0D9DC005E40E9;
+					};
+					D0058BB92DF0D9DE005E40E9 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = D0058B992DF0D9DC005E40E9;
+					};
+				};
+			};
+			buildConfigurationList = D0058B952DF0D9DC005E40E9 /* Build configuration list for PBXProject "CineNest" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D0058B912DF0D9DC005E40E9;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D0058B9B2DF0D9DC005E40E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0058B992DF0D9DC005E40E9 /* CineNest */,
+				D0058BAF2DF0D9DE005E40E9 /* CineNestTests */,
+				D0058BB92DF0D9DE005E40E9 /* CineNestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0058B982DF0D9DC005E40E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0058BAE2DF0D9DE005E40E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0058BB82DF0D9DE005E40E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0058B962DF0D9DC005E40E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0058BAC2DF0D9DE005E40E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0058BB62DF0D9DE005E40E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0058BB22DF0D9DE005E40E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0058B992DF0D9DC005E40E9 /* CineNest */;
+			targetProxy = D0058BB12DF0D9DE005E40E9 /* PBXContainerItemProxy */;
+		};
+		D0058BBC2DF0D9DE005E40E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0058B992DF0D9DC005E40E9 /* CineNest */;
+			targetProxy = D0058BBB2DF0D9DE005E40E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D0058BC42DF0D9DE005E40E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CineNest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.peter.fawry.CineNest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0058BC52DF0D9DE005E40E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CineNest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.peter.fawry.CineNest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D0058BC62DF0D9DE005E40E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D0058BC72DF0D9DE005E40E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0058BC92DF0D9DE005E40E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.peter.fawry.CineNestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CineNest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CineNest";
+			};
+			name = Debug;
+		};
+		D0058BCA2DF0D9DE005E40E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.peter.fawry.CineNestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CineNest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CineNest";
+			};
+			name = Release;
+		};
+		D0058BCC2DF0D9DE005E40E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.peter.fawry.CineNestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CineNest;
+			};
+			name = Debug;
+		};
+		D0058BCD2DF0D9DE005E40E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.peter.fawry.CineNestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CineNest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0058B952DF0D9DC005E40E9 /* Build configuration list for PBXProject "CineNest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0058BC62DF0D9DE005E40E9 /* Debug */,
+				D0058BC72DF0D9DE005E40E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0058BC32DF0D9DE005E40E9 /* Build configuration list for PBXNativeTarget "CineNest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0058BC42DF0D9DE005E40E9 /* Debug */,
+				D0058BC52DF0D9DE005E40E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0058BC82DF0D9DE005E40E9 /* Build configuration list for PBXNativeTarget "CineNestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0058BC92DF0D9DE005E40E9 /* Debug */,
+				D0058BCA2DF0D9DE005E40E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0058BCB2DF0D9DE005E40E9 /* Build configuration list for PBXNativeTarget "CineNestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0058BCC2DF0D9DE005E40E9 /* Debug */,
+				D0058BCD2DF0D9DE005E40E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0058B922DF0D9DC005E40E9 /* Project object */;
+}
