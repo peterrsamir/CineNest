@@ -37,7 +37,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		D0058BEC2DF10376005E40E9 /* Exceptions for "CineNest" folder in "CineNest" target */ = {
+		D0058C7F2DF1F199005E40E9 /* Exceptions for "CineNest" folder in "CineNest" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				ApplicationSupport/Info.plist,
@@ -50,7 +50,7 @@
 		D0058B9C2DF0D9DC005E40E9 /* CineNest */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				D0058BEC2DF10376005E40E9 /* Exceptions for "CineNest" folder in "CineNest" target */,
+				D0058C7F2DF1F199005E40E9 /* Exceptions for "CineNest" folder in "CineNest" target */,
 			);
 			path = CineNest;
 			sourceTree = "<group>";
@@ -372,6 +372,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TMDBKey = "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlY2EzYjhhNDQ5ZmIwMzBhMDhmOWZkNDVlYWVhM2MzNCIsIm5iZiI6MS43NDY4MTc0MTU4NzAwMDAxZSs5LCJzdWIiOiI2ODFlNTE4N2Y5ZWY1YzIxMDIzNDhkZjIiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.1UcEB2PxdYDZcTC45F4HULzV01PPk7lB1os7RlHwds0";
 			};
 			name = Debug;
 		};
@@ -400,6 +401,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TMDBKey = "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlY2EzYjhhNDQ5ZmIwMzBhMDhmOWZkNDVlYWVhM2MzNCIsIm5iZiI6MS43NDY4MTc0MTU4NzAwMDAxZSs5LCJzdWIiOiI2ODFlNTE4N2Y5ZWY1YzIxMDIzNDhkZjIiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.1UcEB2PxdYDZcTC45F4HULzV01PPk7lB1os7RlHwds0";
 			};
 			name = Release;
 		};

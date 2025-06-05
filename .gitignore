@@ -4,6 +4,7 @@ DerivedData/
 *.xcuserstate
 *.xcworkspace/xcuserdata/
 *.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+*.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
 
 # SwiftPM
 .build/
