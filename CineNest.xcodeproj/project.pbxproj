@@ -30,10 +30,10 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		D0058BC22DF0D9DE005E40E9 /* Exceptions for "CineNest" folder in "CineNest" target */ = {
+		D0058BEC2DF10376005E40E9 /* Exceptions for "CineNest" folder in "CineNest" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				ApplicationSupport/Info.plist,
 			);
 			target = D0058B992DF0D9DC005E40E9 /* CineNest */;
 		};
@@ -43,7 +43,7 @@
 		D0058B9C2DF0D9DC005E40E9 /* CineNest */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				D0058BC22DF0D9DE005E40E9 /* Exceptions for "CineNest" folder in "CineNest" target */,
+				D0058BEC2DF10376005E40E9 /* Exceptions for "CineNest" folder in "CineNest" target */,
 			);
 			path = CineNest;
 			sourceTree = "<group>";
@@ -290,7 +290,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CineNest/Info.plist;
+				INFOPLIST_FILE = CineNest/ApplicationSupport/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -316,7 +316,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CineNest/Info.plist;
+				INFOPLIST_FILE = CineNest/ApplicationSupport/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
