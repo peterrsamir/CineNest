@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8F168A8F76EE61B0BA963EF9 /* Pods_CineNest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A8FE3FA5EF94A898AA7F498 /* Pods_CineNest.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		D0058BB12DF0D9DE005E40E9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52DA27CE61DC0F2287C94AFD /* Pods-CineNest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CineNest.release.xcconfig"; path = "Target Support Files/Pods-CineNest/Pods-CineNest.release.xcconfig"; sourceTree = "<group>"; };
+		6A8FE3FA5EF94A898AA7F498 /* Pods_CineNest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CineNest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C328971B5194F83C7F7AC349 /* Pods-CineNest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CineNest.debug.xcconfig"; path = "Target Support Files/Pods-CineNest/Pods-CineNest.debug.xcconfig"; sourceTree = "<group>"; };
 		D0058B9A2DF0D9DC005E40E9 /* CineNest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CineNest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0058BB02DF0D9DE005E40E9 /* CineNestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CineNestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0058BBA2DF0D9DE005E40E9 /* CineNestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CineNestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F168A8F76EE61B0BA963EF9 /* Pods_CineNest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +93,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2EEAB7D4AD2F13F229E5E2F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C328971B5194F83C7F7AC349 /* Pods-CineNest.debug.xcconfig */,
+				52DA27CE61DC0F2287C94AFD /* Pods-CineNest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AC1EDFA0C8D3CF129E8BA2C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A8FE3FA5EF94A898AA7F498 /* Pods_CineNest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D0058B912DF0D9DC005E40E9 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +117,8 @@
 				D0058BB32DF0D9DE005E40E9 /* CineNestTests */,
 				D0058BBD2DF0D9DE005E40E9 /* CineNestUITests */,
 				D0058B9B2DF0D9DC005E40E9 /* Products */,
+				2EEAB7D4AD2F13F229E5E2F0 /* Pods */,
+				AC1EDFA0C8D3CF129E8BA2C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0058BC32DF0D9DE005E40E9 /* Build configuration list for PBXNativeTarget "CineNest" */;
 			buildPhases = (
+				782650638EB1BE9C94E96174 /* [CP] Check Pods Manifest.lock */,
 				D0058B962DF0D9DC005E40E9 /* Sources */,
 				D0058B972DF0D9DC005E40E9 /* Frameworks */,
 				D0058B982DF0D9DC005E40E9 /* Resources */,
+				9006764288A4F80696BE381F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,8 +153,6 @@
 				D0058B9C2DF0D9DC005E40E9 /* CineNest */,
 			);
 			name = CineNest;
-			packageProductDependencies = (
-			);
 			productName = CineNest;
 			productReference = D0058B9A2DF0D9DC005E40E9 /* CineNest.app */;
 			productType = "com.apple.product-type.application";
@@ -147,8 +174,6 @@
 				D0058BB32DF0D9DE005E40E9 /* CineNestTests */,
 			);
 			name = CineNestTests;
-			packageProductDependencies = (
-			);
 			productName = CineNestTests;
 			productReference = D0058BB02DF0D9DE005E40E9 /* CineNestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -170,8 +195,6 @@
 				D0058BBD2DF0D9DE005E40E9 /* CineNestUITests */,
 			);
 			name = CineNestUITests;
-			packageProductDependencies = (
-			);
 			productName = CineNestUITests;
 			productReference = D0058BBA2DF0D9DE005E40E9 /* CineNestUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -244,6 +267,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		782650638EB1BE9C94E96174 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CineNest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9006764288A4F80696BE381F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CineNest/Pods-CineNest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CineNest/Pods-CineNest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CineNest/Pods-CineNest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D0058B962DF0D9DC005E40E9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -284,6 +349,7 @@
 /* Begin XCBuildConfiguration section */
 		D0058BC42DF0D9DE005E40E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C328971B5194F83C7F7AC349 /* Pods-CineNest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,6 +361,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +377,7 @@
 		};
 		D0058BC52DF0D9DE005E40E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52DA27CE61DC0F2287C94AFD /* Pods-CineNest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,6 +389,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -371,7 +440,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -434,7 +503,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

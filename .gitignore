@@ -1,0 +1,37 @@
+# Xcode
+build/
+DerivedData/
+*.xcuserstate
+*.xcworkspace/xcuserdata/
+*.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+
+# SwiftPM
+.build/
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Logs
+*.log
+
+# Temporary files
+*.swp
+*.lock
+*.tmp
+*.orig
+
+# User-specific files
+*.xcuserdatad
+*.moved-aside
+*.orig
+*.backup
+*.swp
+*.dat
+*.xcuserdata
+
+# .env or secrets
+.env
+*.key
+*.pem
+*.cer
