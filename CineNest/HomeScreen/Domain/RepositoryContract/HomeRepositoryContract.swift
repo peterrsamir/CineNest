@@ -9,4 +9,5 @@ import RxSwift
 
 protocol HomeRepositoryContract {
     func fetchMovies(page: Int) -> Observable<[Movie]>
+    func fetchSearchedMovies(page: Int, query: String?) -> Observable<[Movie]>
 }

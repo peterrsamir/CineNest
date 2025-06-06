@@ -9,8 +9,9 @@ import UIKit
 import RxSwift
 import RxRelay
 
-final class HomeViewController: BaseViewController {
+final class HomeViewController: BaseViewController, UISearchBarDelegate {
     
+    @IBOutlet private weak var searchBar: UISearchBar!
     @IBOutlet private weak var tableView: UITableView!
     private var viewModel: HomeViewModelContract
     private var disposeBag: DisposeBag
@@ -41,6 +42,7 @@ final class HomeViewController: BaseViewController {
         observePaginationTrigger()
         bindLoader()
         bindError()
+        bindSearchBar()
     }
     
     private func setupTableView() {
@@ -65,12 +67,23 @@ extension HomeViewController {
                 showAlert(title: "Error".localized, body: errorMessage, actions: [UIAlertAction(title: "OK".localized, style: UIAlertAction.Style.default, handler: nil)])
             }).disposed(by: disposeBag)
     }
+    private func bindSearchBar() {
+        searchBar.delegate = self
+        searchBar.rx.text.orEmpty
+            .skip(1)
+            .distinctUntilChanged()
+            .debounce(.milliseconds(300), scheduler: MainScheduler.instance)
+            .subscribe(onNext: { [weak self] query in
+                self?.viewModel.searchMovies(page: 1, query: query)
+            })
+            .disposed(by: disposeBag)
+    }
 }
 
 // MARK: - TableView Binding
 extension HomeViewController {
     private func bindTableView() {
-        viewModel.itemsGroupedByYear
+        viewModel.searchedMovies
             .bind(
                 to: tableView.rx.items(
                     cellIdentifier: "HomeTableViewCell",
@@ -91,7 +104,11 @@ extension HomeViewController {
         tableView.rx
             .willDisplayCell
             .subscribe(onNext: { [weak self] (cell, indexPath) in
-                self?.viewModel.loadNextPageIfNeeded(currentIndex: indexPath.row)
+                guard let self else { return }
+                viewModel.loadNextPageIfNeeded(
+                    currentIndex: indexPath.row,
+                    query: searchBar.text
+                )
             })
             .disposed(by: disposeBag)
     }

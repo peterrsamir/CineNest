@@ -10,12 +10,18 @@ import Alamofire
 
 enum HomeConfigurations {
     case getMovies(page: String)
+    case searchMovies(page: String, query: String?)
 }
 
 extension HomeConfigurations: TargetType {
     
     var path: String {
-        Constants.APIConstatnts.popularMoviesUrlPath
+        switch self {
+        case .getMovies:
+            Constants.APIConstatnts.popularMoviesUrlPath
+        case .searchMovies:
+            Constants.APIConstatnts.searchMoviesUrlPath
+        }
     }
     var method: HTTPMethodType {
         .get
@@ -33,6 +39,16 @@ extension HomeConfigurations: TargetType {
                 parameters: params,
                 encoding: URLEncoding.default
             )
+        case .searchMovies(page: let page, query: let query):
+            return .requestParameters(
+                parameters:
+                    [Constants.APIConstatnts.includeAdults: false,
+                     Constants.APIConstatnts.includeVideo: false,
+                     Constants.APIConstatnts.page: page,
+                     Constants.APIConstatnts.sortBy: Constants.APIConstatnts.popularityDesc,
+                     Constants.APIConstatnts.query: query ?? ""
+                    ],
+                encoding: URLEncoding.default)
         }
     }
 }

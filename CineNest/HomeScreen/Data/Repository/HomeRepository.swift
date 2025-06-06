@@ -9,7 +9,6 @@ import Foundation
 import RxSwift
 
 struct HomeRepository: HomeRepositoryContract {
-    
     private let remoteDataSource: HomeRemoteDataSourceContract
     
     init(remoteDataSource: HomeRemoteDataSourceContract) {
@@ -19,6 +18,21 @@ struct HomeRepository: HomeRepositoryContract {
     func fetchMovies(page: Int) -> Observable<[Movie]> {
         return Observable.create { observer in
             self.remoteDataSource.getMovies(page: "\(page)") { result in
+                switch result {
+                case .success(let movies):
+                    observer.onNext(movies ?? [])
+                    observer.onCompleted()
+                case .failure(let error):
+                    observer.onError(error)
+                }
+            }
+            return Disposables.create()
+        }
+    }
+    
+    func fetchSearchedMovies(page: Int, query: String?) -> RxSwift.Observable<[Movie]> {
+        return Observable.create { observer in
+            self.remoteDataSource.getSearchedMovies(page: "\(page)", query: query) { result in
                 switch result {
                 case .success(let movies):
                     observer.onNext(movies ?? [])

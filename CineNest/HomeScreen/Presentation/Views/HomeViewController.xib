@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="CineNest" customModuleProvider="target">
             <connections>
+                <outlet property="searchBar" destination="3fo-5d-MXu" id="TMn-uC-6fN"/>
                 <outlet property="tableView" destination="SBF-02-ptP" id="CVu-gk-1zl"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

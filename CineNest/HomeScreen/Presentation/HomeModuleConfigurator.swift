@@ -11,8 +11,12 @@ final class HomeModuleConfigurator {
     static func build() -> HomeViewController{
         let homeDataSource = HomeRemoteDataSource()
         let repo = HomeRepository(remoteDataSource: homeDataSource)
-        let usecase = HomeUseCase(repository: repo)
-        let viewmodel = HomeViewModel(useCase: usecase)
+        let getMoviesuseCase = GetMoviesUseCase(repository: repo)
+        let searchMoviesUseCase = SearchMoviesUseCase(repository: repo)
+        let viewmodel = HomeViewModel(
+            getMoviesUseCase: getMoviesuseCase,
+            searchMoviesUseCase: searchMoviesUseCase
+        )
         let homeViewController = HomeViewController(viewModel: viewmodel)
         return homeViewController
     }
