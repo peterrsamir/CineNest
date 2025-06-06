@@ -11,7 +11,7 @@ import RxRelay
 
 final class HomeViewController: BaseViewController {
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet private weak var tableView: UITableView!
     private var viewModel: HomeViewModelContract
     private var disposeBag: DisposeBag
     
@@ -70,7 +70,7 @@ extension HomeViewController {
 // MARK: - TableView Binding
 extension HomeViewController {
     private func bindTableView() {
-        viewModel.items
+        viewModel.itemsGroupedByYear
             .bind(
                 to: tableView.rx.items(
                     cellIdentifier: "HomeTableViewCell",

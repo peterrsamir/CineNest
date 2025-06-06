@@ -11,7 +11,7 @@ import RxCocoa
 class HomeViewModel: HomeViewModelContract {
     var errorObservable: PublishSubject<String> = PublishSubject<String>()
     var isLoading: PublishSubject<Bool> = PublishSubject<Bool>()
-    var items: BehaviorRelay<[Movie]> = BehaviorRelay(value: [])
+    var itemsGroupedByYear: BehaviorRelay<[Movie]> = BehaviorRelay(value: [])
     private let useCase: HomeUseCaseContract
     private let disposeBag = DisposeBag()
     private var currentPage = 1
@@ -28,9 +28,9 @@ class HomeViewModel: HomeViewModelContract {
             .subscribe(onNext: { [weak self] movies in
                 guard let self else { return }
                 isLoading.onNext(false)
-                var current = items.value
+                var current = itemsGroupedByYear.value
                 current.append(contentsOf: movies)
-                items.accept(current)
+                itemsGroupedByYear.accept(current)
                 // for pagination
                 self.canLoadMore = !movies.isEmpty
                 currentPage = page
@@ -40,7 +40,7 @@ class HomeViewModel: HomeViewModelContract {
     }
     func loadNextPageIfNeeded(currentIndex: Int) {
         // Assuming you want to load more when the user reaches the last 5 items
-        let threshold = items.value.count - 5
+        let threshold = itemsGroupedByYear.value.count - 5
         if currentIndex >= threshold && canLoadMore {
             fetchMovies(page: currentPage + 1)
         }

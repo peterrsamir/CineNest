@@ -10,7 +10,7 @@ import RxRelay
 import RxSwift
 
 protocol HomeViewModelContract: BaseViewModelContract {
-    var items: BehaviorRelay<[Movie]> {get set}
+    var itemsGroupedByYear: BehaviorRelay<[Movie]> {get set}
     func fetchMovies(page: Int) 
     func getMappedCellModelFromMovie(movie: Movie) -> MoviesCellModel
     func loadNextPageIfNeeded(currentIndex: Int)

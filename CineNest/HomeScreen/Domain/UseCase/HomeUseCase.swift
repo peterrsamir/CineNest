@@ -21,5 +21,20 @@ struct HomeUseCase: HomeUseCaseContract {
     
     func execute(page: Int) -> Observable<[Movie]> {
         return repository.fetchMovies(page: page)
+            .map { movies in
+                let grouped = groupByYear(movies)
+                return grouped.flatMap { $0.movies }
+            }
+    }
+}
+
+// MARK: - Arrange items by year
+extension HomeUseCase {
+    private func groupByYear(_ movies: [Movie]) -> [YearlyMovieModel] {
+        let grouped = Dictionary(grouping: movies) { movie -> String in
+            movie.releaseDate?.split(separator: "-").first.map(String.init) ?? "Unknown"
+        }
+        return grouped.map { YearlyMovieModel(year: $0.key, movies: $0.value) }
+            .sorted { $0.year > $1.year }
     }
 }

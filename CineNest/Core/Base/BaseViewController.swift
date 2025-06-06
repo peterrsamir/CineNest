@@ -10,14 +10,6 @@ import UIKit
 class BaseViewController: UIViewController {
     private var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
 
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//        let backImage: UIImage = .backButton
-//        self.navigationController?.navigationBar.backIndicatorImage = backImage
-//        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = backImage
-//        self.navigationController?.navigationBar.tintColor = .white
-//        self.navigationController?.navigationBar.backItem?.title = ""
-//    }
     override func viewDidLoad() {
         super.viewDidLoad()
     }
