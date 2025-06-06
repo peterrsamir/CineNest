@@ -18,7 +18,11 @@ class SplashViewController: UIViewController {
         DispatchQueue.main.asyncAfter(
             deadline: .now()+2,
             execute: {
-                let next = HomeViewController(nibName: nil, bundle: nil)
+                let homeDataSource = HomeRemoteDataSource()
+                let repo = HomeRepository(remoteDataSource: homeDataSource)
+                let usecase = HomeUseCase(repository: repo)
+                let viewmodel = HomeViewModel(useCase: usecase)
+                let next = HomeViewController(viewModel: viewmodel)
                 self.navigationController?.pushViewController(next, animated: false)
         })
     }

@@ -7,5 +7,8 @@ target 'CineNest' do
   # Pods for CineNest
 
   pod 'Alamofire', '~> 5.8'
+  pod 'RxSwift', '6.6.0'
+  pod 'RxCocoa', '6.6.0'
+  pod 'Kingfisher', '7.10.0'
 
 end

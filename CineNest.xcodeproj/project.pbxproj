@@ -37,7 +37,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		D0058C7F2DF1F199005E40E9 /* Exceptions for "CineNest" folder in "CineNest" target */ = {
+		D0C0D6E32DF2F7F200F1F09C /* Exceptions for "CineNest" folder in "CineNest" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				ApplicationSupport/Info.plist,
@@ -50,7 +50,7 @@
 		D0058B9C2DF0D9DC005E40E9 /* CineNest */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				D0058C7F2DF1F199005E40E9 /* Exceptions for "CineNest" folder in "CineNest" target */,
+				D0C0D6E32DF2F7F200F1F09C /* Exceptions for "CineNest" folder in "CineNest" target */,
 			);
 			path = CineNest;
 			sourceTree = "<group>";

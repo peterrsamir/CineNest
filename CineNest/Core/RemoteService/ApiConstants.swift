@@ -16,6 +16,7 @@ enum Constants{
         static let sortBy = "sort_by"
         static let query = "query"
         static let popularityDesc = "popularity.desc"
+        static let imageBaseURL = "https://image.tmdb.org/t/p/w500"
     }
     
 }

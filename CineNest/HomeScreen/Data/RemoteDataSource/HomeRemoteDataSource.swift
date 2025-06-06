@@ -7,7 +7,11 @@
 
 import Foundation
 
-class HomeRemoteDataSource : BaseApi<HomeConfigurations> {
+protocol HomeRemoteDataSourceContract {
+    func getMovies(page: String, completion: @escaping (Result<[Movie]?, NSError>) -> Void)
+}
+    
+final class HomeRemoteDataSource : BaseApi<HomeConfigurations>, HomeRemoteDataSourceContract {
     
     func getMovies(page: String, completion: @escaping (Result<[Movie]?, NSError>) -> Void) {
         self.fetchData(target: .getMovies(page: page), responseType: MoviesModel.self) { (result) in
