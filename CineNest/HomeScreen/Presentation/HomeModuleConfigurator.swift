@@ -6,9 +6,9 @@
 //
 
 import Foundation
+
 final class HomeModuleConfigurator {
-    
-    static func Configure() -> HomeViewController{
+    static func build() -> HomeViewController{
         let homeDataSource = HomeRemoteDataSource()
         let repo = HomeRepository(remoteDataSource: homeDataSource)
         let usecase = HomeUseCase(repository: repo)

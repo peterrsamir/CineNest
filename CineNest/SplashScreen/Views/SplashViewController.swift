@@ -18,7 +18,7 @@ class SplashViewController: UIViewController {
         DispatchQueue.main.asyncAfter(
             deadline: .now()+2,
             execute: {
-                let homeVC = HomeConfigurator.Configure()
+                let homeVC = HomeModuleConfigurator.build()
                 self.navigationController?.pushViewController(homeVC, animated: false)
         })
     }
