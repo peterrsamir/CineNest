@@ -9,8 +9,9 @@ import Foundation
 import RxRelay
 import RxSwift
 
-protocol HomeViewModelContract {
+protocol HomeViewModelContract: BaseViewModelContract {
     var items: BehaviorRelay<[Movie]> {get set}
-    func fetchMovies(page: Int) -> Observable<[Movie]>
+    func fetchMovies(page: Int) 
     func getMappedCellModelFromMovie(movie: Movie) -> MoviesCellModel
+    func loadNextPageIfNeeded(currentIndex: Int)
 }

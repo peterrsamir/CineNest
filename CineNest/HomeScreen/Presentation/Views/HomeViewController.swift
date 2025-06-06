@@ -9,7 +9,7 @@ import UIKit
 import RxSwift
 import RxRelay
 
-final class HomeViewController: UIViewController {
+final class HomeViewController: BaseViewController {
     
     @IBOutlet weak var tableView: UITableView!
     private var viewModel: HomeViewModelContract
@@ -38,20 +38,43 @@ final class HomeViewController: UIViewController {
         super.viewDidLoad()
         setupTableView()
         bindTableView()
-        fetchMovies()
+        observePaginationTrigger()
+        bindLoader()
+        bindError()
     }
     
     private func setupTableView() {
         let nib = UINib(nibName: "HomeTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "HomeTableViewCell")
     }
-    
+}
+
+// MARK: - ViewModel Binding
+extension HomeViewController {
+    private func bindLoader() {
+        viewModel.isLoading
+            .subscribe(onNext: { [weak self] isLoading in
+                guard let self else { return }
+                isLoading ? showLoading() : hideLoading()
+            }).disposed(by: disposeBag)
+    }
+    private func bindError() {
+        viewModel.errorObservable
+            .subscribe(onNext: { [weak self] errorMessage in
+                guard let self else { return }
+                showAlert(title: "Error".localized, body: errorMessage, actions: [UIAlertAction(title: "OK".localized, style: UIAlertAction.Style.default, handler: nil)])
+            }).disposed(by: disposeBag)
+    }
+}
+
+// MARK: - TableView Binding
+extension HomeViewController {
     private func bindTableView() {
         viewModel.items
             .bind(
                 to: tableView.rx.items(
-                cellIdentifier: "HomeTableViewCell",
-                cellType: HomeTableViewCell.self
+                    cellIdentifier: "HomeTableViewCell",
+                    cellType: HomeTableViewCell.self
                 )
             )
         {
@@ -64,12 +87,11 @@ final class HomeViewController: UIViewController {
         )
     }
     
-    private func fetchMovies() {
-        viewModel.fetchMovies(page: 1)
-            .subscribe(onNext: { _ in
-                print("Movies loaded successfully")
-            }, onError: { error in
-                print("Failed to load movies: \(error.localizedDescription)")
+    private func observePaginationTrigger() {
+        tableView.rx
+            .willDisplayCell
+            .subscribe(onNext: { [weak self] (cell, indexPath) in
+                self?.viewModel.loadNextPageIfNeeded(currentIndex: indexPath.row)
             })
             .disposed(by: disposeBag)
     }
