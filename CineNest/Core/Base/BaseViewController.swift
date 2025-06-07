@@ -12,10 +12,7 @@ class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title =  "CineNest"
-        self.navigationController?.navigationBar.titleTextAttributes = [
-            .foregroundColor: UIColor.red
-        ]
+        setNavigationBarAppearance()
     }
     
     func showLoading() {
@@ -38,5 +35,16 @@ class BaseViewController: UIViewController {
             alert.addAction(action)
         }
         present(alert, animated: true, completion: nil)
+    }
+    
+    private func setNavigationBarAppearance() {
+        self.title = "CineNest".localized
+        navigationController?.navigationBar.titleTextAttributes = [
+            .foregroundColor: UIColor.red
+        ]
+        let backItem = UIBarButtonItem()
+        backItem.title = ""
+        navigationItem.backBarButtonItem = backItem
+        navigationController?.navigationBar.tintColor = .red
     }
 }

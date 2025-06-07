@@ -118,6 +118,10 @@ class MoviesDetailsViewController: BaseViewController {
         let nib = UINib(nibName: "CastingTableViewCell", bundle: nil)
         castingTableView.register(nib, forCellReuseIdentifier: "CastingTableViewCell")
     }
+    private func setupNavigation() {
+        self.navigationItem.title = "CineNest".localized
+        navigationController?.navigationItem.hidesBackButton = true
+    }
 
     // MARK: - Actions
     private func onWishListPressed() {
