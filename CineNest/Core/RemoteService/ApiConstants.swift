@@ -24,3 +24,7 @@ enum Constants{
     }
     
 }
+
+extension Notification.Name {
+    static let wishListUpdated = Notification.Name("wishListUpdated")
+}

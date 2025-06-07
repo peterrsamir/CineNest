@@ -19,8 +19,12 @@ struct GetSimilarMoviesUsecase: GetSimilarMoviesUsecaseContract {
         self.repository = repository
     }
     
+    
+    /// - Parameter movieID: get Similar Movies with ID
+    /// - Returns: return the first 5 as business needs
     func execute(movieID: Int) -> Observable<[Movie]> {
         return repository.fetchSimilarMovies(movieID: movieID)
+            .map({ Array($0.prefix(5)) })
     }
 }
 

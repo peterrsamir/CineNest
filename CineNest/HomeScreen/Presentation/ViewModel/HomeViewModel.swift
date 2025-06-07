@@ -17,6 +17,7 @@ class HomeViewModel: HomeViewModelContract {
     // MARK: - Dependencies
     private let getMoviesUseCase: GetMoviesUseCaseContract
     private let searchMoviesUseCase: SearchMoviesUseCaseContract
+    private let wishListUseCase: GetWishListUsecaseContract
     private let disposeBag = DisposeBag()
     // MARK: - State
     private var currentPage = 1
@@ -25,10 +26,12 @@ class HomeViewModel: HomeViewModelContract {
     // MARK: - Init
     init(
         getMoviesUseCase: GetMoviesUseCaseContract,
-        searchMoviesUseCase: SearchMoviesUseCaseContract
+        searchMoviesUseCase: SearchMoviesUseCaseContract,
+        wishListUseCase: GetWishListUsecaseContract
     ) {
         self.getMoviesUseCase = getMoviesUseCase
         self.searchMoviesUseCase = searchMoviesUseCase
+        self.wishListUseCase = wishListUseCase
         fetchMovies(page: 1)
     }
     // MARK: - Public Methods
@@ -81,6 +84,10 @@ class HomeViewModel: HomeViewModelContract {
             rating: movie.voteAverage,
             votingCount: movie.voteCount
         )
+    }
+    
+    func isMovieWishListed(movieID: String) -> Bool {
+        return self.wishListUseCase.isMovieWishListed(id: movieID)
     }
     // MARK: - Private helper methods
     private func handleFetchSuccess(movies: [Movie], page: Int) {

@@ -11,4 +11,5 @@ import RxSwift
 protocol MovieDetailsRepositoryContract {
     func fetchMovieDetails(movieID: Int) -> Observable<MovieDetailsModel>
     func fetchSimilarMovies(movieID: Int) -> Observable<[Movie]>
+    func fetchCastFromSimilarMovies(movieID: Int) -> Observable<[MovieCastModel]>
 }

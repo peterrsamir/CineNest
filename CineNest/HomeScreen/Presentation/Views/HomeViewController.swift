@@ -44,8 +44,11 @@ final class HomeViewController: BaseViewController, UISearchBarDelegate {
         bindError()
         bindSearchBar()
         didSelectItem()
+        observeWishListUpdates()
     }
-    
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: .wishListUpdated, object: nil)
+    }
     private func setupTableView() {
         let nib = UINib(nibName: "HomeTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "HomeTableViewCell")
@@ -94,7 +97,10 @@ extension HomeViewController {
         {
             [weak self] row, movie, cell in
             guard let self else { return }
-            cell.setupCell(cellModel: viewModel.getMappedCellModelFromMovie(movie: movie))
+            cell.setupCell(
+                cellModel: viewModel.getMappedCellModelFromMovie(movie: movie),
+                isWishListed: viewModel.isMovieWishListed(movieID: "\(movie.id ?? -1)")
+            )
         }
         .disposed(
             by: disposeBag
@@ -125,5 +131,11 @@ extension HomeViewController {
                 )
         }).disposed(by: disposeBag)
     }
-        
+    
+    private func observeWishListUpdates() {
+        NotificationCenter.default.addObserver(forName: .wishListUpdated, object: nil, queue: .main) { [weak self] _ in
+            guard let self else { return }
+            tableView.reloadData()
+        }
+    }
 }

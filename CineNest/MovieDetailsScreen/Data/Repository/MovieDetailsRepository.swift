@@ -48,4 +48,21 @@ struct MovieDetailsRepository: MovieDetailsRepositoryContract {
             return Disposables.create()
         }
     }
+    
+    func fetchCastFromSimilarMovies(movieID: Int) -> Observable<[MovieCastModel]> {
+        return Observable.create { observer in
+            remoteDataSource.getCastsFromSimilarMovies(movieID: movieID) {
+                switch $0 {
+                case .success(let movieDetails):
+                    if let movieDetails = movieDetails {
+                        observer.onNext(movieDetails)
+                    }
+                    observer.onCompleted()
+                case .failure(let error):
+                    observer.onError(error)
+                }
+            }
+            return Disposables.create()
+        }
+    }
 }

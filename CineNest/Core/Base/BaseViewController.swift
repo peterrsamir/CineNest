@@ -12,6 +12,10 @@ class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title =  "CineNest"
+        self.navigationController?.navigationBar.titleTextAttributes = [
+            .foregroundColor: UIColor.red
+        ]
     }
     
     func showLoading() {

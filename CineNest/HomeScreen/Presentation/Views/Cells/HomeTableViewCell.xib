@@ -160,6 +160,7 @@
                 <outlet property="movieTitleBackgroundView" destination="DrK-N4-Ein" id="voi-xS-e3y"/>
                 <outlet property="raingLabel" destination="zai-QX-LLh" id="uDl-nk-OAZ"/>
                 <outlet property="viewsLabel" destination="jO5-bA-y6q" id="QPv-ud-tb4"/>
+                <outlet property="wishListImage" destination="7dK-if-DHx" id="6tp-LC-3FI"/>
             </connections>
             <point key="canvasLocation" x="231.15942028985509" y="81.026785714285708"/>
         </tableViewCell>

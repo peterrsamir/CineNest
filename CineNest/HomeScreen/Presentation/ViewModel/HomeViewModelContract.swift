@@ -16,4 +16,5 @@ protocol HomeViewModelContract: BaseViewModelContract {
     func getMappedCellModelFromMovie(movie: Movie) -> MoviesCellModel
     func searchMovies(page: Int, query: String?)
     func loadNextPageIfNeeded(currentIndex: Int, query: String?)
+    func isMovieWishListed(movieID: String) -> Bool
 }

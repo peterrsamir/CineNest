@@ -11,7 +11,7 @@ import Alamofire
 enum MovieDetailsConfigurations {
     case getMovieDetailsBy(id: Int)
     case getSimilarMovies(id: Int)
-    case getSimilarMovieCastBy(id: Int)
+    case getCastFromSimilarMoviesBy(id: Int)
 }
 
 extension MovieDetailsConfigurations: TargetType {
@@ -22,7 +22,7 @@ extension MovieDetailsConfigurations: TargetType {
             return String(format: Constants.APIConstatnts.moviesDetailsUrlPath, id)
         case .getSimilarMovies(let id):
             return String(format: Constants.APIConstatnts.similarMoviesUrlPath, id)
-        case .getSimilarMovieCastBy(let id):
+        case .getCastFromSimilarMoviesBy(let id):
             return String(format: Constants.APIConstatnts.similarMovieCastUrlPath, id)
         }
     }
@@ -37,7 +37,7 @@ extension MovieDetailsConfigurations: TargetType {
         case .getSimilarMovies:
             return .requestPlain
             
-        case .getSimilarMovieCastBy:
+        case .getCastFromSimilarMoviesBy:
             return .requestPlain
         }
     }

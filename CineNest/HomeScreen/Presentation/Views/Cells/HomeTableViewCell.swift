@@ -16,19 +16,16 @@ class HomeTableViewCell: UITableViewCell {
     @IBOutlet private weak var raingLabel: UILabel!
     @IBOutlet private weak var movieTitle: UILabel!
     @IBOutlet private weak var movieImage: UIImageView!
+    @IBOutlet weak var wishListImage: UIImageView!
     
-    func setupCell(cellModel: MoviesCellModel) {
+    func setupCell(cellModel: MoviesCellModel, isWishListed: Bool) {
         movieTitle.text = cellModel.movieTitle
         movieImage.kf.indicatorType = .activity
-        movieImage.kf.setImage(
-            with: URL(
-                string: Constants.APIConstatnts.imageBaseURL+(cellModel.movieImage ?? "")
-            ),
-            placeholder: UIImage(named: "placeholder")
-        )
+        movieImage.setURLImage(url: cellModel.movieImage ?? "")
         descriptionLabel.text = cellModel.movieDesc
         raingLabel.text = cellModel.rating
         viewsLabel.text = cellModel.votingCount
         movieTitleBackgroundView.backgroundColor = UIColor.black.withAlphaComponent(0.5)
+        wishListImage.tintColor = isWishListed ? UIColor.orange : UIColor.gray
     }
 }
