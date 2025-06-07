@@ -18,6 +18,9 @@ enum Constants{
         static let query = "query"
         static let popularityDesc = "popularity.desc"
         static let imageBaseURL = "https://image.tmdb.org/t/p/w500"
+        static let moviesDetailsUrlPath = "movie/%d"
+        static let similarMoviesUrlPath = "movie/%d/similar"
+        static let similarMovieCastUrlPath = "movie/%d/credits"
     }
     
 }

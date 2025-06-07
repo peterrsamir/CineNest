@@ -43,6 +43,7 @@ final class HomeViewController: BaseViewController, UISearchBarDelegate {
         bindLoader()
         bindError()
         bindSearchBar()
+        didSelectItem()
     }
     
     private func setupTableView() {
@@ -112,4 +113,17 @@ extension HomeViewController {
             })
             .disposed(by: disposeBag)
     }
+    private func didSelectItem(){
+        tableView.rx.modelSelected(Movie.self).subscribe(
+            onNext: {[weak self] (MovieItem) in
+                guard let self = self else {return}
+                navigationController?.pushViewController(
+                    MoviesDetailsConfigurator.build(
+                        movieID: MovieItem.id ?? 0
+                    ),
+                    animated: false
+                )
+        }).disposed(by: disposeBag)
+    }
+        
 }
